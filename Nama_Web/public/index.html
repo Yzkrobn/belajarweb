@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
@@ -40,16 +41,16 @@
     }
 </style> -->
 
-<body>
+<body class="font-SegoeUI">
     <!-- <div class="navbar" id="navbar">Navbar</div>
     <div class="content">
         <div id="sticky" class="sticky-div">Saya akan menjadi sticky</div>
         <div class="content">Konten lainnya...</div> 
     </div> -->
-    <nav class="w-full border-solid border-b-4 border-sky-600 fixed ">
+    <nav class="w-full bg-white border-solid border-b-4 border-sky-600 fixed">
         <div class="mx-5 flex justify-between">
             <div class="flex items-center"><img src="https://picsum.photos/50" alt="">
-                <h1>MikroLembut</h1>
+                <h1 class="font-bold">MikroLembut</h1>
             </div>
             <button id="buttonNav" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px"
@@ -58,9 +59,9 @@
                 </svg>
         </div>
         </button>
-        <section id="sectionlyer" class="fixed bg-gradient-to-r from-blue-950 from-70% to-sky-600 to-100%">
-            <div class="flex mx-8">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, <a href="" class="underline text-slate-400">optio.</a></p>
+        <section id="sectionFlyer" class="fixed mt-1 bg-gradient-to-r from-blue-950 from-70% to-sky-600 to-100%">
+            <div class="flex justify-between mx-8 my-1">
+                <p class="text-white text-center text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, <a href="" class="hover:underline text-slate-400">optio.></a></p>
                 <button id="buttonSectionClose" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </button>
@@ -72,6 +73,18 @@
             <img src="https://picsum.photos/1000" alt="">
         </div>
     </main>
+    <nav class="sticky w-full">
+        <div class="bg-slate-600 rounded-full mx-4">
+            <ul class="flex overflow-x-auto mx-4 my-8">
+                <li class=""><a href="" class="whitespace-nowrap">Content-1</a></li>
+                <li class=""><a href="" class="whitespace-nowrap">Content-2</a></li>
+                <li class=""><a href="" class="whitespace-nowrap">Content-3</a></li>
+                <li class=""><a href="" class="whitespace-nowrap">Content-4</a></li>
+                <li class=""><a href="" class="whitespace-nowrap">Content-5</a></li>
+                <li class=""><a href="" class="whitespace-nowrap">Content-6</a></li>
+            </ul>
+        </div>
+    </nav>
     <script src="./js/script.js"></script>
 </body>
 

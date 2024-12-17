@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'SegoeUI': ['"Segoe UI"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
-

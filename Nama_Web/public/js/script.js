@@ -10,13 +10,13 @@
 // }
 
 document.addEventListener("DOMContentLoaded",()=>{
-    const buttonNav=document.getElementById("buttonNav");
+    // const buttonNav=document.getElementById("buttonNav");
     const buttonSectionClose=document.getElementById("buttonSectionClose");
     const sectionFlyer=document.getElementById("sectionFlyer");
     
     const buttonClose=()=>{
         buttonSectionClose.addEventListener("click",()=>{
-            sectionFlyer.parentNode.removeChild("sectionFlyer");
+            sectionFlyer.remove();
         });
     };
     buttonClose();
